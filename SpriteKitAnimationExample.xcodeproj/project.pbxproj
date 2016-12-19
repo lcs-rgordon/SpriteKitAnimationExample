@@ -22,6 +22,7 @@
 		811FFE2C1E084D980039D689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811FFE2F1E084D980039D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		811FFE311E084D980039D689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811FFE371E084EA60039D689 /* ExperimentZone.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExperimentZone.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				811FFE2C1E084D980039D689 /* Assets.xcassets */,
 				811FFE2E1E084D980039D689 /* Main.storyboard */,
 				811FFE311E084D980039D689 /* Info.plist */,
+				811FFE371E084EA60039D689 /* ExperimentZone.playground */,
 			);
 			path = SpriteKitAnimationExample;
 			sourceTree = "<group>";
