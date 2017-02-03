@@ -12,6 +12,7 @@
 		811FFE2B1E084D980039D689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811FFE2A1E084D980039D689 /* ViewController.swift */; };
 		811FFE2D1E084D980039D689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811FFE2C1E084D980039D689 /* Assets.xcassets */; };
 		811FFE301E084D980039D689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811FFE2E1E084D980039D689 /* Main.storyboard */; };
+		812ABEE01E44F87800D050DD /* space-final-frontier.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 812ABEDF1E44F87800D050DD /* space-final-frontier.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		811FFE2F1E084D980039D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		811FFE311E084D980039D689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811FFE371E084EA60039D689 /* ExperimentZone.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExperimentZone.playground; sourceTree = "<group>"; };
+		812ABEDF1E44F87800D050DD /* space-final-frontier.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "space-final-frontier.mp3"; path = "ExperimentZone.playground/Resources/space-final-frontier.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,18 @@
 				811FFE2C1E084D980039D689 /* Assets.xcassets */,
 				811FFE2E1E084D980039D689 /* Main.storyboard */,
 				811FFE311E084D980039D689 /* Info.plist */,
+				812ABEE11E44F87D00D050DD /* Sounds */,
 				811FFE371E084EA60039D689 /* ExperimentZone.playground */,
 			);
 			path = SpriteKitAnimationExample;
+			sourceTree = "<group>";
+		};
+		812ABEE11E44F87D00D050DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				812ABEDF1E44F87800D050DD /* space-final-frontier.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812ABEE01E44F87800D050DD /* space-final-frontier.mp3 in Resources */,
 				811FFE2D1E084D980039D689 /* Assets.xcassets in Resources */,
 				811FFE301E084D980039D689 /* Main.storyboard in Resources */,
 			);
