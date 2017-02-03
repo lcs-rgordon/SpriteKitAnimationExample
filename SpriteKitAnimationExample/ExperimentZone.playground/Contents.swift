@@ -28,6 +28,13 @@ sentences += ["to boldly go"]
 sentences += ["where no one"]
 sentences += ["has gone before."]
 
+// Create some actions that will be reused below several times (action creation is expensive so unnecessary re-creation of actions should be avoided)
+let actionMakeVisible = SKAction.unhide()
+let actionFadeIn = SKAction.fadeIn(withDuration: 1)
+let actionWaitToShow = SKAction.wait(forDuration: 3)
+let actionFadeOut = SKAction.fadeOut(withDuration: 1)
+let actionRemoveNode = SKAction.removeFromParent()
+
 // Iterate over the sentences and create SKLabelNodes
 var monologueLabels : [SKLabelNode] = []
 for sentence in sentences {
@@ -46,11 +53,6 @@ for sentence in sentences {
     // Set up some actions to show each label
     let delay = TimeInterval(5 * (monologueLabels.count - 1))
     let actionWaitToAppear = SKAction.wait(forDuration: delay)
-    let actionMakeVisible = SKAction.unhide()
-    let actionFadeIn = SKAction.fadeIn(withDuration: 1)
-    let actionWaitToShow = SKAction.wait(forDuration: 3)
-    let actionFadeOut = SKAction.fadeOut(withDuration: 1)
-    let actionRemoveNode = SKAction.removeFromParent()
     let sequence = SKAction.sequence([actionWaitToAppear, actionMakeVisible, actionFadeIn, actionWaitToShow, actionFadeOut, actionRemoveNode])
     
     // Add the label to the scene and then run the sequence on it
