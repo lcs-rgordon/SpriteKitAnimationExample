@@ -31,9 +31,14 @@ sentences += ["has gone before."]
 // Create some actions that will be reused below several times (action creation is expensive so unnecessary re-creation of actions should be avoided)
 let actionMakeVisible = SKAction.unhide()
 let actionFadeIn = SKAction.fadeIn(withDuration: 1)
-let actionWaitToShow = SKAction.wait(forDuration: 3)
+let actionWaitToShow = SKAction.wait(forDuration: 1)
 let actionFadeOut = SKAction.fadeOut(withDuration: 1)
 let actionRemoveNode = SKAction.removeFromParent()
+
+// Play short sound clip
+let actionPlaySound = SKAction.playSoundFileNamed("space-final-frontier.mp3", waitForCompletion: false)
+let sequence = SKAction.sequence([actionWaitToShow, actionPlaySound])
+scene.run(sequence)
 
 // Iterate over the sentences and create SKLabelNodes
 var monologueLabels : [SKLabelNode] = []
@@ -51,7 +56,7 @@ for sentence in sentences {
     monologueLabels[monologueLabels.count - 1].isHidden = true
     
     // Set up some actions to show each label
-    let delay = TimeInterval(5 * (monologueLabels.count - 1))
+    let delay = TimeInterval(3 * (monologueLabels.count - 1))
     let actionWaitToAppear = SKAction.wait(forDuration: delay)
     let sequence = SKAction.sequence([actionWaitToAppear, actionMakeVisible, actionFadeIn, actionWaitToShow, actionFadeOut, actionRemoveNode])
     
