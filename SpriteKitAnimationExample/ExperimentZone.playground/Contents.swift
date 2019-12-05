@@ -75,5 +75,5 @@ view.showsNodeCount = true
 view.presentScene(scene)
 
 // Show the view in the live view area at right
-PlaygroundPage.current.liveView = view
+PlaygroundSupport.PlaygroundPage.current.liveView = view
 
